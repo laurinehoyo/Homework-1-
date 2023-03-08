@@ -1,0 +1,31 @@
+---
+title: "Homework 1 R Markdown Syntax"
+author: "Karl Myers (et groupe)"
+date: "2023-03-08"
+output: html_document
+---
+
+**R Markdown Syntax**
+
+**1 : Show an example where the chunk option cache = T leads to a misleading answer. This example must be different from the one presented in the textbook.**
+
+``{r computeA, cache=TRUE}
+a = 20
+
+
+{r, cache=TRUE}
+(m = a/2)``
+
+
+**2 : Simulate 100 random samples from a Uniform(0,1) distribution using the function runif(). Store these 100 values in a vector called x. Then, compute the empirical mean, median and variance of x. Are these results different from 1/2, 1/2 and 1/12 (their respective theoretical values)? Is this result surprising? Justify your answer**
+  
+``set.seed(100)
+samples<-runif(n=100, min=0, max=1)
+print(samples)``
+
+**3 : Include a graph showing the histogram of x (make sure to include a caption to this figure), this can be done in R using the function hist().**
+
+
+
+
+
